@@ -1,5 +1,4 @@
-twosum
-=======
+# two_sum
 Computes the sum of two floating point numbers as a non-overlapping 
 sequence using Knuth's method.
 * D.E. Knuth.  "The Art of Computer Programming: Seminumerical Algorithms".  Volume 2.  1981
