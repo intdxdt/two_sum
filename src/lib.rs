@@ -1,11 +1,11 @@
 ///Fast two sum
-pub fn two_sum(a: f64, b: f64) -> [f64; 2] {
+pub fn two_sum(a: f64, b: f64) -> Vec<f64> {
     let x  = a + b;
     let bv = x - a;
     let av = x - bv;
     let br = b - bv;
     let ar = a - av;
-    [ar + br, x]
+    vec!(ar + br, x)
 }
 
 
