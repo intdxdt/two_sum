@@ -1,18 +1,16 @@
 ///Fast two sum
-pub fn two_sum(a: f64, b: f64) -> Vec<f64> {
+pub fn two_sum(a: f64, b: f64) -> [f64;2] {
     let x  = a + b;
     let bv = x - a;
     let av = x - bv;
     let br = b - bv;
     let ar = a - av;
-    vec!(ar + br, x)
+    [ar + br, x]
 }
-
-
 
 #[cfg(test)]
 mod two_sum_test {
-    use super::two_sum;
+    use super::*;
 
     #[test]
     fn test_two_sum() {
